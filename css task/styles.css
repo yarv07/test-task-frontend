@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@500&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 6em;
+}
+
+.wrapper {
+    padding: 0 1.5em;
+    background-color: #edf0f5;
+    font-family: 'Ubuntu', sans-serif;
+    color: #373c42;
+    max-height: 695px;
+}
+
+.wrapper__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.wrapper__content {
+    display: flex;
+    justify-content: center!important;
+    color: #373c42;
+}
+
+.card {
+    display: block;
+    background-color: #fff;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.75rem;
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-clip: border-box;
+    color: #919da5;
+    height: fit-content;
+}
+
+.card__title {
+    margin: 0;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #373c42;
+    font-weight: 300;
+}
+
+.card__price {
+    text-align: center;
+}
+
+.price__currency {
+    margin: 0!important;
+    color: rgb(36,71,106);
+    font-size: 1.75rem;
+}
+
+.price__amount {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(36,71,106);
+    font-size: 6.3rem;
+}
+
+.price__period {
+    text-align: center!important;
+}
+
+.definition-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    color: #919da5;
+    line-height: 1.5em;
+    vertical-align: bottom;
+    padding-inline-start: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+}
+
+.definition-list__item {
+    display: inline-block;
+    padding: 0.5rem;
+}
+.definition-list__icon_checkmark_type {
+    display: inline-block;
+    top: 5px;
+    margin-right: 0.75rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid rgb(159,205,47);
+    position: relative;
+    padding: 7px;
+}
+
+.definition-list__icon_checkmark_type::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(159,205,47);
+    border-width: 0 1px 1px 0;
+    transform: rotate(35deg) translateY(-50%);
+}
+
+.card__btn {
+    margin-top: 1.5rem;
+    display: grid;
+    font-size: 1rem;
+    text-size-adjust: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-color: #24476a;
+    padding: 0.75rem 0.375rem;
+    border: 1px solid #24476a;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+}
+
+a {
+    color: #57AADD;
+}
+
+.card__ribbon {
+    --text: 'POPULAR';
+    --first-color: #e14251;
+    --second-color: #e14251;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card__ribbon::before {
+    content: var(--text);
+    position: absolute;
+    width: 140%;
+    height: 25px;
+    background: var(--first-color);
+    transform: rotate(45deg) translateY(-12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card__ribbon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    background: var(--second-color);
+    box-shadow: 90px 90px var(--second-color);
+}
+
+.card__popular {
+    position: relative;
+    bottom: 25px;
+    height: 510px;
+    border: 3px solid #9fcd2f;
+}
+
+.card__btn_popular {
+    border: none;
+    background-color: #9fcd2f;
+}
