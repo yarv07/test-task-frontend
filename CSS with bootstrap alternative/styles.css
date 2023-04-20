@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@500&display=swap');
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 6em;
+}
+
+.content__boxed {
+    padding: 0 1.5em;
+    background-color: #edf0f5;
+    font-family: 'Ubuntu', sans-serif;
+    color: #373c42;
+}
+
+.mt-5 {
+    margin-top: 2rem!important;
+}
+
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 2em;
+    --bs-card-border-width: none;
+    width: 290px;
+}
+
+.card-body {
+    color: #919da5;
+}
+
+h5 {
+    color:#373c42;
+}
+
+.text-primary {
+    font-family: 'Poppins', sans-serif;
+}
+
+.list-group-item {
+    border: none;
+    color: #919da5;
+}
+
+.btn-outline-primary {
+    /* --bs-btn-color: #9bd3f4; */
+    --bs-btn-border-color: #24476a;
+}
+
+.btn-success {
+    --bs-btn-bg: #9fcd2f;
+    --bs-btn-border-color: none;
+}
+
+.ribbon {
+    --text: 'POPULAR';
+    --first-color: #e14251;
+    --second-color: #e14251;    
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ribbon:before {
+    content: var(--text);
+    position: absolute;
+    width: 140%;
+    height: 25px;
+    background: var(--first-color);
+    transform: rotate(45deg) translateY(-12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.ribbon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    background: var(--second-color);
+    box-shadow: 90px 90px var(--second-color);
+}
+
+:root {
+    --bs-primary-rgb: 36,71,106;
+    --bs-success-rgb: 159,205,47;
+    --bs-link-color-rgb: 87,170,221;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding-top: 0;
+    }
+    .card {
+        width: 190px;
+    }
+    .display-2 {
+        font-size: calc(0.575rem + 3.9vw);
+    }
+
+}
+
+
+
+
